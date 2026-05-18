@@ -88,13 +88,20 @@ export default function Hero() {
             {/* Main circle */}
             <div className="absolute inset-0 rounded-full bg-linear-to-br from-emerald-400 to-teal-600 shadow-2xl shadow-emerald-500/40" />
 
-            {/* Floating cards - Responsive positioning */}
-            <div className="absolute top-4 sm:top-8 left-2 sm:-left-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float max-w-[160px] sm:max-w-none">
+            {/* Center icon - Much smaller on mobile */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl opacity-90">
+                😁
+              </div>
+            </div>
+
+            {/* Floating cards - Positioned outside circle on mobile */}
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 sm:top-8 sm:left-4 sm:translate-x-0 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float w-[170px] sm:w-auto z-10">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-emerald-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
                 🦷
               </div>
               <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500 truncate">
+                <p className="text-[10px] sm:text-xs text-slate-500">
                   Treatments Done
                 </p>
                 <p className="font-bold text-sm sm:text-base text-slate-900">
@@ -103,12 +110,12 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute top-1/2 -translate-y-1/2 right-2 sm:-right-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float-delayed max-w-[150px] sm:max-w-none">
+            <div className="absolute top-1/2 -translate-y-1/2 -right-4 sm:-right-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float-delayed w-[160px] sm:w-auto z-10">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-teal-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
                 ⭐
               </div>
               <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500 truncate">
+                <p className="text-[10px] sm:text-xs text-slate-500">
                   Patient Rating
                 </p>
                 <p className="font-bold text-sm sm:text-base text-slate-900">
@@ -117,24 +124,17 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float max-w-[140px] sm:max-w-none">
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:bottom-8 sm:left-8 sm:translate-x-0 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float w-[150px] sm:w-auto z-10">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-amber-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
                 🏆
               </div>
               <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500 truncate">
+                <p className="text-[10px] sm:text-xs text-slate-500">
                   Years of Trust
                 </p>
                 <p className="font-bold text-sm sm:text-base text-slate-900">
                   8+ Years
                 </p>
-              </div>
-            </div>
-
-            {/* Center icon - Responsive size */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-                😁
               </div>
             </div>
           </div>
