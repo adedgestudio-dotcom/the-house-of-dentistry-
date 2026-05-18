@@ -83,59 +83,51 @@ export default function Hero() {
         </div>
 
         {/* Right Visual */}
-        <div className="relative mt-8 lg:mt-0">
+        <div className="relative">
           <div className="relative aspect-square max-w-lg mx-auto">
             {/* Main circle */}
             <div className="absolute inset-0 rounded-full bg-linear-to-br from-emerald-400 to-teal-600 shadow-2xl shadow-emerald-500/40" />
 
-            {/* Center icon - Much smaller on mobile */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl opacity-90">
-                😁
-              </div>
-            </div>
-
-            {/* Floating cards - Positioned outside circle on mobile */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 sm:top-8 sm:left-4 sm:translate-x-0 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float w-[170px] sm:w-auto z-10">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-emerald-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
+            {/* Floating cards - Compact size */}
+            <div className="absolute top-8 -left-4 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float">
+              <div className="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center text-lg flex-shrink-0">
                 🦷
               </div>
-              <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500">
+              <div>
+                <p className="text-[9px] text-slate-500 leading-tight">
                   Treatments Done
                 </p>
-                <p className="font-bold text-sm sm:text-base text-slate-900">
-                  10,000+
-                </p>
+                <p className="font-bold text-xs text-slate-900">10,000+</p>
               </div>
             </div>
 
-            <div className="absolute top-1/2 -translate-y-1/2 -right-4 sm:-right-4 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float-delayed w-[160px] sm:w-auto z-10">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-teal-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
+            <div className="absolute top-1/2 -right-4 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float-delayed">
+              <div className="w-9 h-9 rounded-lg bg-teal-100 flex items-center justify-center text-lg flex-shrink-0">
                 ⭐
               </div>
-              <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500">
+              <div>
+                <p className="text-[9px] text-slate-500 leading-tight">
                   Patient Rating
                 </p>
-                <p className="font-bold text-sm sm:text-base text-slate-900">
-                  4.8 / 5.0
-                </p>
+                <p className="font-bold text-xs text-slate-900">4.8 / 5.0</p>
               </div>
             </div>
 
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:bottom-8 sm:left-8 sm:translate-x-0 bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float w-[150px] sm:w-auto z-10">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-amber-100 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
+            <div className="absolute bottom-8 left-8 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float">
+              <div className="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center text-lg flex-shrink-0">
                 🏆
               </div>
-              <div className="min-w-0">
-                <p className="text-[10px] sm:text-xs text-slate-500">
+              <div>
+                <p className="text-[9px] text-slate-500 leading-tight">
                   Years of Trust
                 </p>
-                <p className="font-bold text-sm sm:text-base text-slate-900">
-                  8+ Years
-                </p>
+                <p className="font-bold text-xs text-slate-900">8+ Years</p>
               </div>
+            </div>
+
+            {/* Center icon - Original large size */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-9xl">😁</div>
             </div>
           </div>
         </div>
