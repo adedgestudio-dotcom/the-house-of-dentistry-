@@ -8,6 +8,12 @@
     animation: float 4s ease-in-out infinite;
     animation-delay: 1.5s;
   }
+  .animate-scale-in {
+    animation: scale-in 0.2s ease-out;
+  }
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out;
+  }
 }
 
 @keyframes float {
@@ -17,5 +23,27 @@
   }
   50% {
     transform: translateY(-12px);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
