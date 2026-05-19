@@ -90,40 +90,46 @@ export default function Hero() {
             {/* Main circle */}
             <div className="absolute inset-0 rounded-full bg-linear-to-br from-emerald-400 to-teal-600 shadow-2xl shadow-emerald-500/40" />
 
-            {/* Floating cards - Compact size */}
-            <div className="absolute top-8 -left-4 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float">
-              <div className="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center text-lg flex-shrink-0">
+            {/* Floating cards - Responsive: compact on mobile, original size on desktop */}
+            <div className="absolute top-8 -left-4 bg-white rounded-xl sm:rounded-2xl p-2.5 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-emerald-100 flex items-center justify-center text-lg sm:text-2xl flex-shrink-0">
                 🦷
               </div>
               <div>
-                <p className="text-[9px] text-slate-500 leading-tight">
+                <p className="text-[9px] sm:text-xs text-slate-500 leading-tight">
                   Treatments Done
                 </p>
-                <p className="font-bold text-xs text-slate-900">10,000+</p>
+                <p className="font-bold text-xs sm:text-base text-slate-900">
+                  10,000+
+                </p>
               </div>
             </div>
 
-            <div className="absolute top-1/2 -right-4 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float-delayed">
-              <div className="w-9 h-9 rounded-lg bg-teal-100 flex items-center justify-center text-lg flex-shrink-0">
+            <div className="absolute top-1/2 -right-4 bg-white rounded-xl sm:rounded-2xl p-2.5 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float-delayed">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-teal-100 flex items-center justify-center text-lg sm:text-2xl flex-shrink-0">
                 ⭐
               </div>
               <div>
-                <p className="text-[9px] text-slate-500 leading-tight">
+                <p className="text-[9px] sm:text-xs text-slate-500 leading-tight">
                   Patient Rating
                 </p>
-                <p className="font-bold text-xs text-slate-900">4.8 / 5.0</p>
+                <p className="font-bold text-xs sm:text-base text-slate-900">
+                  4.8 / 5.0
+                </p>
               </div>
             </div>
 
-            <div className="absolute bottom-8 left-8 bg-white rounded-xl p-2.5 shadow-xl flex items-center gap-2 animate-float">
-              <div className="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center text-lg flex-shrink-0">
+            <div className="absolute bottom-8 left-8 bg-white rounded-xl sm:rounded-2xl p-2.5 sm:p-4 shadow-xl flex items-center gap-2 sm:gap-3 animate-float">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-amber-100 flex items-center justify-center text-lg sm:text-2xl flex-shrink-0">
                 🏆
               </div>
               <div>
-                <p className="text-[9px] text-slate-500 leading-tight">
+                <p className="text-[9px] sm:text-xs text-slate-500 leading-tight">
                   Years of Trust
                 </p>
-                <p className="font-bold text-xs text-slate-900">8+ Years</p>
+                <p className="font-bold text-xs sm:text-base text-slate-900">
+                  8+ Years
+                </p>
               </div>
             </div>
 
