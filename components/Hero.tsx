@@ -51,7 +51,9 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="tel:+918072982811"
+              href="https://wa.me/918072982811?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20The%20House%20of%20Dentistry."
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-7 py-4 rounded-full bg-linear-to-r from-emerald-500 to-teal-600 text-white font-semibold shadow-xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all"
             >
               <Phone size={18} />

@@ -62,7 +62,9 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+918072982811"
+            href="https://wa.me/918072982811?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20The%20House%20of%20Dentistry."
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-linear-to-r from-emerald-500 to-teal-600 text-white font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all"
           >
             <Phone size={16} />
@@ -98,7 +100,9 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="tel:+918072982811"
+            href="https://wa.me/918072982811?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20The%20House%20of%20Dentistry."
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-linear-to-r from-emerald-500 to-teal-600 text-white font-semibold"
           >
             <Phone size={16} />
